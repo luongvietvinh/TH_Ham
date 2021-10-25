@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+
+    function number (num1){
+        let min = num1[0];
+        for (let i = 0; i < num1.length; i++) {
+            if (num1[i] > min) {
+                min = num1[i];
+            }
+        }
+        return min;
+    }
+    let num2 = [2,3,1,4,65,7,3,67,76,43,77];
+    let min = number(num2)
+    alert(min)
+</script>
+</body>
+</html>

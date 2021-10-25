@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <p>
+        <label>chuyen đổi nhiệt độ</label>
+        <input type="number" id="baby" placeholder="chuyển đổi nhiệt độ"
+        oninput="sobaby(this.value)"
+        onchange="sobaby(this.value)">
+    </p>
+    <p>nhiệt độ là : <span id="result"></span> </p>
+</form>
+<script>
+    function sobaby(ahihi){
+        ahihi = parseFloat(ahihi)
+        document.getElementById("result").innerHTML = (ahihi-32) / 1.8;
+    }
+</script>
+</body>
+</html>
